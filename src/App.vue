@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <p>{{ count }}</p>
+    <p>count: {{ count }}</p>
   </div>
 </template>
 
