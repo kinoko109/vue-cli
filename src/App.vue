@@ -2,6 +2,7 @@
   <div id="app">
     <p>{{ count }}</p>
     <p>{{ doubleCounter }}</p>
+    <p>tripleCounter: {{ tripleCounter }}</p>
     <button @click="increment(1)">+1</button>
     <button @click="decrement(2)">-1</button>
   </div>
@@ -15,7 +16,7 @@ export default {
     count() {
       return this.$store.state.count
     },
-    ...mapGetters(["doubleCounter"])
+    ...mapGetters(["doubleCounter", "tripleCounter"])
   },
   methods: {
     ...mapActions(["increment"]),
